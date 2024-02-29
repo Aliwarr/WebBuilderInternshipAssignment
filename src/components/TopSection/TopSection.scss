@@ -1,0 +1,134 @@
+$blackColor :#2C384A;
+$greyColor : #4B5665;
+$lightGrey:#5C6874;
+
+
+
+.top-section{
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+
+    h1{
+        color: $blackColor;
+        font-family: Inter;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 60px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #E1E4E6;
+        
+    }
+
+    .content {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+      
+        span {
+            color: $greyColor;
+            display: flex;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+      
+          .icon {
+            font-size: 18px;
+            margin-right: 5px;
+            cursor: pointer;
+          }
+        }
+        &:nth-child(3){
+            justify-content: end;
+        }
+    }
+
+    .border{
+        margin-top: 10px;
+        border-bottom: 2px solid #E1E4E6;
+    }
+
+    .features{
+        
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+
+        button{
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            width: 105px;
+            height: 36px;
+            border: none;
+            border-radius: 12px;
+            background-color: transparent;
+            cursor: pointer;
+
+        }
+    }
+
+    .route{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            align-items: center;
+            cursor: pointer;
+            
+
+            .icon {
+                align-items: end;
+                font-size: 18px;
+                margin-left: 10px;
+            }
+        }
+
+    }
+}
+@media screen and (max-width :650px) {
+    .top-section{
+        margin-top: 5px;
+        h1{
+            font-size: 20px;
+            text-align: center;
+            padding-bottom: 0;
+        }
+        .content{
+            margin-top: 5px;
+            gap: 10px;
+            span{
+                font-size: 9px;
+                .icon{
+                    display: none;
+                }
+            }
+        }
+        .features{
+            margin-top: 10px;
+            flex-direction: column;
+            gap: 5px;
+            button{
+                border: 1px solid $greyColor;
+                font-size: 11px;
+                height: 18px;
+            }
+        }
+        .route{
+            display: none;
+        }
+    }
+}

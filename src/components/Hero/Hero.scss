@@ -1,0 +1,238 @@
+$whiteColor: #fff;
+$blackColor: #2c384a;
+$greyColor: #4b5665;
+$lightGrey: #5c6874;
+
+.hero-content {
+  position: relative;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+
+  .btn {
+    position: absolute;
+    top: 0px;
+    height: 10px;
+
+    button {
+      font-size: 16px;
+      font-weight: 400;
+      padding: 8px 20px;
+      color: $whiteColor;
+      background-color: #ff7724;
+      border: none;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      cursor: pointer;
+      
+      .icon {
+        align-items: center;
+        margin-right: 10px;
+        font-size: 16px;
+        
+      }
+    }
+  }
+
+  .circle {
+    position: absolute;
+    top: 50px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 250, 250);
+    border: 1px solid $greyColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $greyColor;
+  }
+
+  .image {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    color: $greyColor;
+    font-weight: 400;
+    font-size: 14px;
+
+    img {
+      width: 60%;
+    }
+  }
+  .content {
+    width: 50%;
+
+    h4 {
+      font-size: 16px;
+      font-weight: 400;
+      color: $greyColor;
+
+      span {
+        font-size: 16px;
+        font-weight: 700;
+        color: $blackColor;
+      }
+    }
+    .text {
+      margin-top: 10px;
+
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+        color: $blackColor;
+      }
+      h4 {
+        margin-top: 5px;
+        margin-left: 18px;
+      }
+    }
+
+    .last {
+      display: flex;
+      gap: 5px;
+      margin-top: 23px;
+      font-weight: 300;
+      font-size: 18px;
+      color: blue;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .rating {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .details {
+      border-radius: 5px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 135px;
+      height: 118px;
+      background-color: #f3f9ff;
+      margin: 0 auto;
+
+      .icon1 {
+        position: absolute;
+        top: 8px;
+        right: 14px;
+        font-size: 10px;
+        font-weight: lighter;
+        cursor: pointer;
+      }
+      .rates {
+        position: absolute;
+        bottom: 1px;
+        text-align: center;
+        color: #074786;
+
+        h3 {
+          font-weight: 400;
+          font-size: 38px;
+        }
+
+        h4 {
+          font-weight: 400;
+          margin-top: 12px;
+          margin-bottom: 8px;
+          font-size: 22px;
+        }
+
+        .stars {
+          .icon2 {
+            color: #ffb80f;
+          }
+        }
+      }
+    }
+    button {
+      width: 100%;
+      height: 45px;
+      background-color: #1b88f4;
+      border-radius: 5px;
+      color: $whiteColor;
+      font-size: 18px;
+      font-weight: 400;
+      border: none;
+      margin-bottom: 4px;
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .hero-content{
+    flex-direction: column;
+    align-items: center;
+    .btn{
+      display: none;
+    }
+
+    .image{
+      width: 70%;
+    }
+    .content{
+      width: 100%;
+      text-align: center;
+      h4{
+        font-size: 12px;
+        span{
+          font-size: 14px;
+        }
+      }
+      .text{
+        margin-top: 5px;
+        h3{
+          font-size: 14px;
+        }
+      }
+      .last{
+        font-size: 12px;
+        margin-top: 10px;
+      }
+      
+    }
+    .rating{
+      width: 40%;
+
+      .details{
+        width: 120px;
+        height: 100px;
+        .rates{
+          h3{
+            font-size: 22px;
+          }
+          h4{
+            margin-top: 5px;
+            font-size: 18px;
+          }
+        }
+      }
+      button{
+        font-size: 12px;
+        height: 30px;
+        width: 80%;
+        margin: auto;
+      }
+    }
+  }
+}

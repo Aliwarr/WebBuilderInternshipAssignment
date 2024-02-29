@@ -1,0 +1,12 @@
+.main-card{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    gap: 25px;
+}
+@media screen and (max-width: 650px) {
+    .main-card{
+        flex-direction: column;
+        align-items: center;
+    }
+}
